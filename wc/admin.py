@@ -15,7 +15,7 @@ class CatInlineTab(admin.TabularInline):
 
 @admin.register(WorkingCatApplication)
 class TNRApplicationAdmin(admin.ModelAdmin):
-	list_display = ('application_status', 'planned_placement', 'application_date', 'first_name', 'last_name', 'business_name', 'business_type', 'city')
+	list_display = ('application_status', 'application_date', 'planned_placement', 'first_name', 'last_name', 'business_name', 'business_type', 'city')
 	list_filter = ['application_status']
 	search_fields = [ 'first_name', 'last_name']
 	inlines = [CatInlineTab, ]
