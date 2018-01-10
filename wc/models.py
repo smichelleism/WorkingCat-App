@@ -30,6 +30,7 @@ class WorkingCatApplication(models.Model):
 	inventory_loaned	= models.CharField(max_length = 100, blank=True, null=True)
 	application_date	= models.DateTimeField(default=timezone.now)
 	planned_placement	= models.CharField(verbose_name='What is the planned placment date?', max_length=100, blank=True, null=True)
+	want_how_many_cats	= models.CharField(verbose_name='How many cats are wanted?', max_length=50, blank=True, null=True)
 	first_name          = models.CharField(verbose_name='What is your first name?', max_length=100)
 	last_name           = models.CharField(verbose_name='What is your family (last) name?',  max_length=100)
 	email               = models.CharField(verbose_name='What is your email?',  max_length=100)
