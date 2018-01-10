@@ -25,7 +25,7 @@ SECRET_KEY = 'k3oq#m$^$c#p3-d=u8t&qd7-_^4(qsefn(77hyq@f^(u$0js&-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['workingcat.pythonanywhere.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'wc',
-    'report_builder',
+    #'report_builder',
 ]
 
 MIDDLEWARE = [
@@ -64,6 +64,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.static',
+                'django.template.context_processors.media',
             ],
         },
     },
