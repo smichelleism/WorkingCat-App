@@ -24,4 +24,4 @@ class TNRApplicationAdmin(admin.ModelAdmin):
 class Cat(admin.ModelAdmin):
 	search_fields = ['name', 'laas_id', 'microchip_no']
 	list_filter = ['outcome', 'source']
-	list_display = ('outcome', 'outcome_date', 'source', 'name', 'description', 'gender', 'laas_id')
+	list_display = ('source', 'laas_id', 'pull_date', 'outcome', 'outcome_date', 'name' )
