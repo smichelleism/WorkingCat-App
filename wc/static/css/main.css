@@ -1,0 +1,22 @@
+body {
+	
+}
+input {
+	display: block;
+	margin-bottom: 1em;
+	margin-left: 1.25em;
+}
+textarea {
+	display: block;
+	margin-left: 1.25em;
+}
+select {
+	display: block;
+	margin-left: 1.25em;
+}
+div.header {
+	background-color: #000000;
+	color: #ffffff;
+	padding: 1em 2em;
+	margin-bottom: 1em;
+}
